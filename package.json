@@ -13,7 +13,6 @@
     "lint:fix": "turbo run lint:fix",
     "lint:report": "turbo run lint:report",
     "lint": "turbo run lint",
-    "postinstall": "turbo run post-install",
     "pre-commit": "lint-staged",
     "prepare": "husky install"
   },
