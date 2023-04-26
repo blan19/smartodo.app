@@ -24,7 +24,7 @@
  * /endpoint/{endpoint}/apis.ts
  * 뮤테이션,쿼리에 사용하는 api 또는 개별적으로 사용하는 api
  * ```ts
- * const getTodos = async () => {
+ * export const getTodos = async () => {
  *   return get(`/server/todos`)
  * }
  * ```
