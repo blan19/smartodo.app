@@ -1,19 +1,5 @@
 const Home = () => {
-  return (
-    <div
-      style={{
-        textAlign: 'center',
-      }}
-    >
-      <h1
-        style={{
-          fontSize: '30px',
-        }}
-      >
-        Hello World
-      </h1>
-    </div>
-  );
+  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
 };
 
 export default Home;
