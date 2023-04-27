@@ -1,6 +1,7 @@
 {
   "extends": "@smartodo/tsconfig/nextjs.json",
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
       "~/*": ["./src/*"]
     },
