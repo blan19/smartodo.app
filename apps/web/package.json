@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@smartodo/prisma": "workspace:*",
     "@smartodo/lib": "workspace:*",
     "@smartodo/ui": "workspace:*",
     "@svgr/webpack": "^6.5.1",

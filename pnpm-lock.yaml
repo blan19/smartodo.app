@@ -115,6 +115,7 @@ importers:
       '@babel/runtime': ^7.20.13
       '@smartodo/config': workspace:*
       '@smartodo/lib': workspace:*
+      '@smartodo/prisma': workspace:*
       '@smartodo/tsconfig': workspace:*
       '@smartodo/ui': workspace:*
       '@svgr/webpack': ^6.5.1
@@ -146,6 +147,7 @@ importers:
       zod: ^3.21.4
     dependencies:
       '@smartodo/lib': link:../../packages/lib
+      '@smartodo/prisma': link:../../packages/prisma
       '@smartodo/ui': link:../../packages/ui
       '@svgr/webpack': 6.5.1
       '@tanstack/react-query': 4.29.3_biqbaboplfbrettd7655fr4n2y
