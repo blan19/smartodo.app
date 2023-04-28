@@ -10,5 +10,24 @@
       "cache": false,
       "persistent": true
     }
-  }
+  },
+  "globalEnv": [
+    "DATABASE_PORT",
+    "DATABASE_URL",
+    "POSTGRES_PASSWORD",
+    "POSTGRES_USER",
+    "POSTGRES_DB",
+    "POSTGRES_HOST",
+    "POSTGRES_HOSTNAME",
+    "NEXT_PUBLIC_KAKAO_ID",
+    "NEXT_PUBLIC_KAKAO_SECRET",
+    "NEXT_PUBLIC_NAVER_ID",
+    "NEXT_PUBLIC_NAVER_SECRET",
+    "NEXT_PUBLIC_GOOGLE_ID",
+    "NEXT_PUBLIC_GOOGLE_SECRET",
+    "NEXT_PUBLIC_DEBUG",
+    "NEXT_PUBLIC_URL",
+    "NODE_ENV",
+    "VERCEL_URL"
+  ]
 }

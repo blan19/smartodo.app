@@ -9,17 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@svgr/webpack": "^6.5.1",
-    "@tanstack/react-query": "^4.13.4",
-    "@tanstack/react-query-devtools": "^4.13.4",
-    "@smartodo/ui": "workspace:*",
+    "@smartodo/prisma": "workspace:*",
     "@smartodo/lib": "workspace:*",
+    "@smartodo/ui": "workspace:*",
+    "@svgr/webpack": "^6.5.1",
+    "@tanstack/react-query": "^4.29.3",
+    "@tanstack/react-query-devtools": "^4.13.4",
+    "@trpc/client": "^10.21.1",
+    "@trpc/next": "^10.21.1",
+    "@trpc/react-query": "^10.21.1",
+    "@trpc/server": "^10.21.1",
     "axios": "1.2.0",
     "dayjs": "^1.11.6",
     "next": "13.1.0",
+    "next-auth": "^4.22.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-hook-form": "^7.38.0"
+    "react-hook-form": "^7.38.0",
+    "superjson": "^1.12.3",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
