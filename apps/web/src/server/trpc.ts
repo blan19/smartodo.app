@@ -1,4 +1,5 @@
 import { initTRPC } from '@trpc/server';
+import { createContextInner } from './context';
 
 /**
  * @description
@@ -10,7 +11,7 @@ import { initTRPC } from '@trpc/server';
  * https://trpc.io/docs/server/context
  */
 
-const t = initTRPC.context().create();
+const t = initTRPC.context<typeof createContextInner>().create();
 
 export const router = t.router;
 export const mergeRouters = t.mergeRouters;

@@ -5,6 +5,7 @@ import {
   type NextApiResponse,
 } from 'next';
 import { type Session, getServerSession } from 'next-auth';
+import { nextAuthOptions } from '../pages/api/auth/[...nextauth]';
 
 type CreateContextOptions =
   | CreateNextContextOptions
@@ -22,7 +23,7 @@ export type GetSessionFn =
   | (() => Promise<Session | null>);
 
 const DEFAULT_SESSION_GETTER: GetSessionFn = ({ req, res }) =>
-  getServerSession(req, res, {});
+  getServerSession(req, res, nextAuthOptions);
 
 /**
  * Inner context.

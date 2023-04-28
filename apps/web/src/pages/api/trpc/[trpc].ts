@@ -2,6 +2,7 @@ import { getServerSession } from 'next-auth';
 import * as trpcNext from '~/server/adapters/next';
 import { createContext as createTrpcContext } from '~/server/context';
 import { appRouter } from '~/server/routers/_app';
+import { nextAuthOptions } from '../auth/[...nextauth]';
 
 export default trpcNext.createNextApiHandler({
   router: appRouter,
@@ -9,7 +10,7 @@ export default trpcNext.createNextApiHandler({
    * @link https://trpc.io/docs/context
    */
   createContext: ({ req, res }) => {
-    const sessionGetter = () => getServerSession(req, res, {});
+    const sessionGetter = () => getServerSession(req, res, nextAuthOptions);
 
     return createTrpcContext({ req, res }, sessionGetter);
   },
